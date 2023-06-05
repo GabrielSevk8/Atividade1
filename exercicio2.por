@@ -1,13 +1,16 @@
 programa
 {
+	inclua biblioteca Matematica
 	
 	funcao inicio()
 	{
-		inteiro n1,n2,n3,n4,resultado
-		escreva("insira os produtos na ordem correta: \n")
-		leia (n1,n2,n3,n4)
-		resultado = n1*n2-n3*n4
-		escreva("Diferença é: " ,resultado)
+		real n1,n2,n3,media
+		escreva("insira 3 notas: \n")
+		leia (n1,n2,n3)
+		
+		media = (n1+n2+n3)/3
+		media = Matematica.arredondar((n1+n2+n3)/3,2)
+		escreva("media: ",media)
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -15,7 +18,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 204; 
+ * @POSICAO-CURSOR = 211; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
